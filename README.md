@@ -1,1 +1,3 @@
-# jenkinsfileproject
+# maven-project
+
+Simple Maven Project
