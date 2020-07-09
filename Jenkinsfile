@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                'clean install package'
+                  'clean install package'
             }
             post {
                 success {
