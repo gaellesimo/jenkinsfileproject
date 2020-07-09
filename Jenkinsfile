@@ -14,17 +14,14 @@ pipeline {
         }
         stage('Deploy in Staging Environment'){
             steps{
-                build job: 'SampleCodePipeline1'
+                 echo 'Building sample maven project'
  
             }
             
         }
         stage('Deploy to Production'){
             steps{
-                timeout(time:5, unit:'DAYS'){
-                    input message:'Approve PRODUCTION Deployment?'
-                }
-                build job: 'Deploy_Application_Prod_Env'
+                 echo "builing sample maven project"
             }
         }
     }
